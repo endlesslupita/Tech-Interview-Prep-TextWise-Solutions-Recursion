@@ -17,8 +17,8 @@ def reverse_string_recursion(string):
     if length == 0 or length == 1:
         return string
     else:
-        return
-        string = reverse_string_recursion(string[1:]) + reverse_string_recursion(string[0])
+        string = reverse_string_recursion(string[1:]) + string[0]
+        return string
 if __name__ == '__main__':
 
 
