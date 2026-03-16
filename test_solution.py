@@ -4,7 +4,7 @@ def test_normal_case_1():
         assert reverse_string('Hello!') == '!olleH'
 
 def test_normal_case_2():
-        assert reverse_string('a man a plan panama') == 'amanap nalp a nam'
+        assert reverse_string('a man a plan panama') == 'amanap nalp a nam a'
 
 def test_normal_case_3():
         assert reverse_string('testing testing 123') == '321 gnitset gnitset'
@@ -25,7 +25,7 @@ def test_normal_case_1_recurse():
         assert reverse_string_recursion('Hello!') == '!olleH'
 
 def test_normal_case_2_recurse():
-        assert reverse_string_recursion('a man a plan panama') == 'amanap nalp a nam'
+        assert reverse_string_recursion('a man a plan panama') == 'amanap nalp a nam a'
 
 def test_normal_case_3_recurse():
         assert reverse_string_recursion('testing testing 123') == '321 gnitset gnitset'
