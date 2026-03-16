@@ -1,3 +1,5 @@
+from solution import reverse_string, reverse_string_recursion
+
 def test_normal_case_1():
         assert reverse_string('Hello!') == '!olleH'
 
@@ -17,25 +19,25 @@ def test_edge_case_2():
 
 def test_edge_case_3():
 #test two character string
-        assert reverse_string('yo') = 'oy'
+        assert reverse_string('yo') == 'oy'
 
-def test_normal_case_1():
+def test_normal_case_1_recurse():
         assert reverse_string_recursion('Hello!') == '!olleH'
 
-def test_normal_case_2():
+def test_normal_case_2_recurse():
         assert reverse_string_recursion('a man a plan panama') == 'amanap nalp a nam'
 
-def test_normal_case_3():
+def test_normal_case_3_recurse():
         assert reverse_string_recursion('testing testing 123') == '321 gnitset gnitset'
 
-def test_edge_case_1():
+def test_edge_case_1_recurse():
 #test empty string
         assert reverse_string_recursion('') == ''
 
-def test_edge_case_2():
+def test_edge_case_2_recurse():
 #test single character string
         assert reverse_string_recursion('g') == ('g')
 
-def test_edge_case_3():
+def test_edge_case_3_recurse():
 #test two character string
-        assert reverse_string_recursion('yo') = 'oy'
+        assert reverse_string_recursion('yo') == 'oy'
