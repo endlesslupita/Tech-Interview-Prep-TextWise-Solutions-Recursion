@@ -2,12 +2,10 @@ def reverse_string(string):
 # Reverse string using naive method
     
     right = len(string) - 1
-    new_string = [''] * right
+    new_string = ''
     left = 0
     while right >= 0:
-        string[right]
-        new_string.len(right)
-        new_string[left] = string[right]
+        new_string = new_string + string[right]
         left += 1
         right -= 1
 
