@@ -42,3 +42,34 @@ Clarity in problem understanding and solution approach.
 Communication skills during explanation and coding.
 Code readability and use of appropriate data structures.
 Understanding of time and space complexity.
+
+-------------------------
+
+## Recursive String Reversal — ASCII Diagram
+
+```
+reverse_string_recursion("hello")
+│
+├─ recursive case: reverse_string_recursion("ello") + "h"
+│  │
+│  ├─ recursive case: reverse_string_recursion("llo") + "e"
+│  │  │
+│  │  ├─ recursive case: reverse_string_recursion("lo") + "l"
+│  │  │  │
+│  │  │  ├─ recursive case: reverse_string_recursion("o") + "l"
+│  │  │  │  │
+│  │  │  │  └─ BASE CASE: return "o"
+│  │  │  │
+│  │  │  └─ returns "o" + "l" = "ol"
+│  │  │
+│  │  └─ returns "ol" + "l" = "oll"
+│  │
+│  └─ returns "oll" + "e" = "olle"
+│
+└─ returns "olle" + "h" = "olleh"
+```
+
+**Base case:** string of length 0 or 1 — return as-is
+**Recursive case:** `reverse_string_recursion(string[1:]) + string[0]`
+**Time complexity:** O(n) — one call per character
+**Space complexity:** O(n) — call stack grows to depth n
