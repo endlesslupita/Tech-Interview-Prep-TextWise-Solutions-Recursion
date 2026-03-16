@@ -14,13 +14,10 @@ def reverse_string():
 
 def reverse_string_recursion(string):
     length = len(string)
-    if length = 0 OR 1:
+    if length == 0 or length == 1:
         return string
     else:
-        for length:
-        string = string[1, 2, 3, 4] + string[0]
-
-
+        string = reverse_string_recursion(string[1:]) + string[0]
 if __name__ == '__main__':
 
 
