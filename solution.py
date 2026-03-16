@@ -1,17 +1,27 @@
 def reverse_string(string):
-# Reverse string using naive method
+    '''
+    Reverse string using naive method
+
+    Time: O(n)
+    Space: O(n)
+    '''
+
     
     right = len(string) - 1
     new_string = ''
-    left = 0
     while right >= 0:
         new_string = new_string + string[right]
-        left += 1
         right -= 1
 
     return new_string
 
 def reverse_string_recursion(string):
+    '''
+    Reverse string using recursion
+
+    Time: O(n)
+    Space: O(n)
+    '''
     length = len(string)
     if length == 0 or length == 1:
         return string
